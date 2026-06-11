@@ -97,6 +97,7 @@ SafeCheck AI dapat memberi jawaban yang salah atau menyesatkan jika chunk yang d
 
 Kenapa Ini Penting
 Karena pada sistem keamanan digital, satu jawaban salah bisa berdampak besar. Kalau AI terlalu percaya diri tetapi salah, user bisa tetap klik link berbahaya atau membagikan data pribadi. Maka hallucination harus diperlakukan sebagai risiko utama, bukan risiko tambahan.
+
 ---
 
 
