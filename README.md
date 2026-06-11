@@ -8,9 +8,9 @@
 
 ## Deskripsi
 
-SafeCheck AI adalah sistem **RAG (Retrieval-Augmented Generation)** berbahasa Indonesia yang membantu pengguna mendeteksi pesan penipuan digital seperti phishing, scam hadiah, social engineering, dan penipuan lowongan kerja.
+SafeCheck AI adalah AI Assistant yang menggunakan sistem **RAG (Retrieval-Augmented Generation)** untuk membantu pengguna mendeteksi pesan penipuan digital seperti phishing, scam hadiah, social engineering, dan penipuan lowongan kerja.
 
-**Target pengguna:** Pengguna internet umum, mahasiswa, dan nasabah perbankan digital yang tidak memiliki latar belakang teknis keamanan siber.
+**Target User:** Pengguna internet umum, mahasiswa, dan nasabah perbankan digital yang tidak memiliki latar belakang teknis keamanan siber.
 
 ---
 
@@ -55,7 +55,20 @@ Jawaban + Risk Level + Source + Rekomendasi
 - OJK Anti Fraud: https://ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/ITSK/Documents/PANDUAN%20STRATEGI%20ANTI%20FRAUD%20(ITSK)%202024.pdf
 - SMS Dataset: https://github.com/bopbi/indonesia-sms-spam-dataset
 
-## 🧪 Contoh Penggunaan
+## 10 Pertanyaan User
+1.	Saya dapat SMS katanya menang hadiah dari BRI, beneran gak?
+2.	Ada yang minta OTP saya lewat WhatsApp ngaku dari Tokopedia, aman?
+3.	Dapat email dari BCA minta verifikasi akun, link-nya harus diklik?
+4.	Link bit.ly dikirim orang asing di WhatsApp, bahaya gak kalau dibuka?
+5.	Nomor ini ngaku CS Shopee tapi bukan dari aplikasi resmi, gimana?
+6.	Diminta transfer dulu buat cairkan hadiah, ini penipuan?
+7.	SMS bilang paket tertahan di bea cukai dan harus bayar, valid?
+8.	Ada lowongan kerja minta foto KTP dan selfie sebelum interview, normal?
+9.	Dapat pesan akun akan diblokir dalam 24 jam, perlu direspons?
+10.	WhatsApp blast dari nomor tidak dikenal kirim link promo diskon 90%, aman?
+
+
+## Contoh Retrieved Context
 
 ```python
 # Cek pesan mencurigakan
@@ -78,6 +91,13 @@ result = safecheck_analyze(
 ```
 
 ---
+
+## Resiko Hallucination
+
+Risiko utama dalam sistem ini adalah hallucination, yaitu AI menjawab dengan informasi yang tidak ada di dokumen. Selain itu, AI bisa salah mengambil chunk karena kata kunci mirip, atau memberi rasa aman palsu jika jawaban terdengar meyakinkan tetapi tidak akurat
+
+---
+
 
 ## Guardrails yang Diterapkan
 
