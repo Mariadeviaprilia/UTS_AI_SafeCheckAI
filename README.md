@@ -1,4 +1,4 @@
-# 🛡️ SafeCheck AI — Sistem Deteksi Penipuan Digital
+# SafeCheck AI — Sistem Deteksi Penipuan Digital
 
 **Mata Kuliah:** Artificial Intelligence  
 **Nama:** Maria Devi Aparilia  
@@ -6,7 +6,7 @@
 
 ---
 
-## 📌 Deskripsi
+## Deskripsi
 
 SafeCheck AI adalah sistem **RAG (Retrieval-Augmented Generation)** berbahasa Indonesia yang membantu pengguna mendeteksi pesan penipuan digital seperti phishing, scam hadiah, social engineering, dan penipuan lowongan kerja.
 
@@ -14,7 +14,7 @@ SafeCheck AI adalah sistem **RAG (Retrieval-Augmented Generation)** berbahasa In
 
 ---
 
-## 🏗️ Arsitektur RAG Pipeline
+## Arsitektur RAG Pipeline
 
 ```
 User Query
@@ -40,7 +40,7 @@ Jawaban + Risk Level + Source + Rekomendasi
 
 ---
 
-## 📚 Sumber Dokumen (Knowledge Base)
+## Sumber Dokumen (Knowledge Base)
 
 | Chunk | Kategori | Sumber | Author |
 |-------|----------|--------|--------|
@@ -51,40 +51,9 @@ Jawaban + Risk Level + Source + Rekomendasi
 | chunk_E | sms_spam_example | Indonesia SMS Spam Dataset | bopbi |
 
 **Link Dokumen:**
-- 🏛️ BSSN 2024: https://alika.pesisirbaratkab.go.id/ebook/lanskap-keamanan-siber-indonesia-2024
-- 🏦 OJK Anti Fraud: https://ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/ITSK/Documents/PANDUAN%20STRATEGI%20ANTI%20FRAUD%20(ITSK)%202024.pdf
-- 📊 SMS Dataset: https://github.com/bopbi/indonesia-sms-spam-dataset
-
----
-
-## ⚙️ Cara Menjalankan
-
-### Opsi 1: Google Colab (Direkomendasikan)
-
-1. Buka file `SafeCheck_AI_RAG.ipynb` di Google Colab
-2. Klik **"Open in Colab"** atau upload manual
-3. Tambahkan API Key:
-   - Klik ikon 🔑 (Secrets) di sidebar kiri Colab
-   - Tambahkan secret: `ANTHROPIC_API_KEY` = *(API key kamu)*
-4. Jalankan semua sel secara berurutan (**Runtime > Run all**)
-
-### Opsi 2: Lokal
-
-```bash
-# Clone repo
-git clone https://github.com/USERNAME/safecheck-ai.git
-cd safecheck-ai
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Jalankan notebook
-jupyter notebook SafeCheck_AI_RAG.ipynb
-```
-
-> **Dapatkan API Key:** Daftar di https://console.anthropic.com → API Keys → Create Key
-
----
+- BSSN 2024: https://alika.pesisirbaratkab.go.id/ebook/lanskap-keamanan-siber-indonesia-2024
+- OJK Anti Fraud: https://ojk.go.id/id/Publikasi/Roadmap-dan-Pedoman/ITSK/Documents/PANDUAN%20STRATEGI%20ANTI%20FRAUD%20(ITSK)%202024.pdf
+- SMS Dataset: https://github.com/bopbi/indonesia-sms-spam-dataset
 
 ## 🧪 Contoh Penggunaan
 
@@ -110,7 +79,7 @@ result = safecheck_analyze(
 
 ---
 
-## 🛡️ Guardrails yang Diterapkan
+## Guardrails yang Diterapkan
 
 | Guardrail | Deskripsi |
 |-----------|-----------|
@@ -122,7 +91,7 @@ result = safecheck_analyze(
 
 ---
 
-## 📊 Evaluasi
+## Evaluasi
 
 Evaluasi dilakukan terhadap 3 pertanyaan uji:
 
@@ -134,7 +103,7 @@ Evaluasi dilakukan terhadap 3 pertanyaan uji:
 
 ---
 
-## 📦 Dependensi
+## Dependensi
 
 ```
 anthropic
@@ -147,7 +116,7 @@ matplotlib
 
 ---
 
-## 🗺️ Rencana Pengembangan (Next Step)
+## Rencana Pengembangan (Next Step)
 
 - [ ] Load PDF dokumen asli secara otomatis (bukan manual)
 - [ ] Chunking otomatis dengan LangChain atau LlamaIndex
@@ -158,7 +127,7 @@ matplotlib
 
 ---
 
-## 📄 Lisensi
+## Lisensi
 
 Proyek ini dibuat untuk keperluan akademik (Tugas UTS Artificial Intelligence).  
 Dokumen sumber milik BSSN dan OJK — digunakan sesuai ketentuan publikasi pemerintah.
