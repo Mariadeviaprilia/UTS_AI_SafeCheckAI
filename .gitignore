@@ -1,0 +1,23 @@
+# API Keys — JANGAN PERNAH COMMIT
+.env
+*.key
+api_key.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.jupyter/
+
+# Hasil evaluasi (opsional, bisa di-include jika mau)
+retrieval_scores.png
+
+# OS
+.DS_Store
+Thumbs.db
