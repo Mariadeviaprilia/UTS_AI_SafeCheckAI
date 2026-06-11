@@ -1,7 +1,7 @@
 # SafeCheck AI — Sistem Deteksi Penipuan Digital
 
 **Mata Kuliah:** Artificial Intelligence  
-**Nama:** Maria Devi Aparilia  
+**Nama:** Maria Devi Aprilia  
 **NIM:** 24110400032  
 
 ---
