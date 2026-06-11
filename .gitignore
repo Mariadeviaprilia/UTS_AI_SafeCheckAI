@@ -1,4 +1,4 @@
-# API Keys — JANGAN PERNAH COMMIT
+# API Keys 
 .env
 *.key
 api_key.txt
@@ -15,7 +15,7 @@ build/
 # Jupyter
 .jupyter/
 
-# Hasil evaluasi (opsional, bisa di-include jika mau)
+# Hasil evaluasi
 retrieval_scores.png
 
 # OS
