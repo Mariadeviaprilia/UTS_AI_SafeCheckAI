@@ -93,9 +93,10 @@ result = safecheck_analyze(
 ---
 
 ## Resiko Hallucination
+SafeCheck AI dapat memberi jawaban yang salah atau menyesatkan jika chunk yang diambil tidak relevan atau konteks dokumen tidak cukup. Contohnya, pesan “menang hadiah dari BRI, klik link untuk klaim” bisa salah dinilai aman padahal berisiko tinggi.
 
-Risiko utama dalam sistem ini adalah hallucination, yaitu AI menjawab dengan informasi yang tidak ada di dokumen. Selain itu, AI bisa salah mengambil chunk karena kata kunci mirip, atau memberi rasa aman palsu jika jawaban terdengar meyakinkan tetapi tidak akurat
-
+Kenapa Ini Penting
+Karena pada sistem keamanan digital, satu jawaban salah bisa berdampak besar. Kalau AI terlalu percaya diri tetapi salah, user bisa tetap klik link berbahaya atau membagikan data pribadi. Maka hallucination harus diperlakukan sebagai risiko utama, bukan risiko tambahan.
 ---
 
 
